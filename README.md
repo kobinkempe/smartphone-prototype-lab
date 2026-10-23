@@ -1,5 +1,9 @@
 # Smartphone Prototype Lab
 
+## Public demo
+
+[Open the live demo](https://kobin-ai-portfolio.kobinkempe.chatgpt.site/smartphone-prototype-lab/) · [Read the case study](https://kobin-ai-portfolio.kobinkempe.chatgpt.site/case-studies/smartphone-prototype-lab/)
+
 Six interactive ways to explore how a smartphone's parts and tools are made, using the speaker and its dependencies as a shared learning journey.
 
 ![Prototype collection](docs/screenshots/overview.jpg)
