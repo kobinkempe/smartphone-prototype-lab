@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Build a conceptual smartphone speaker in four illustrated, scroll-driven steps. Explore its parts, tools, and motion.">
+<meta name="theme-color" content="#ffffff"><title>Speaker — The phone, piece by piece</title>
+<link rel="icon" href="favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="style.css"><script defer src="app.js"></script>
+</head>
+<body>
+<a class="skip" href="#step-1">Skip to assembly steps</a>
+<header class="pathbar">
+ <a class="brand" href="#top" aria-label="Back to top"><span class="brandmark">↗</span><span>Piece by piece</span></a>
+ <nav aria-label="Your place in the phone" class="path"><button data-context="phone">Smartphone</button><span aria-hidden="true">›</span><button data-context="sound">Sound system</button><span aria-hidden="true">›</span><a href="#top" aria-current="page">Speaker</a><span id="path-extra"></span></nav>
+ <span class="edition">01 / SOUND</span>
+</header>
+<main id="top">
+ <section class="hero" aria-labelledby="page-title">
+  <div><p class="eyebrow"><span class="dot"></span> THE SMARTPHONE ENCYCLOPEDIA</p><h1 id="page-title">How a phone<br>makes <em>sound.</em></h1></div>
+  <div class="hero-intro"><p>A tiny moving system,<br>hiding in plain sight.</p><span>Build a speaker in four steps. Scroll to bring each piece into place, then see what moves.</span><a class="scroll-hint" href="#step-1">Start assembling <span aria-hidden="true">↓</span></a></div>
+ </section>
+ <div class="assembly" id="assembly">
+  <div class="stage-column">
+   <section class="stage" aria-label="Interactive speaker assembly diagram">
+    <div class="stage-heading"><span><span class="live-dot"></span> <span id="stage-mode">FIXED SYSTEM</span></span><span class="stage-count" id="stage-count">01 / 04</span></div>
+    <div class="stage-title"><h2 id="stage-title">Make a place for movement.</h2><p id="stage-subtitle">The magnet and iron stay still.</p></div>
+    <div class="drawing">
+    <svg id="speaker-diagram" viewBox="0 0 800 570" role="group" aria-labelledby="diagram-title diagram-desc">
+     <title id="diagram-title">Cross-section of a conceptual electrodynamic smartphone speaker</title><desc id="diagram-desc">An insulated copper coil attached to a diaphragm sits in the magnetic air gap. The coil and diaphragm move together while the permanent magnet and soft iron stay fixed. Scroll to assemble; select labeled parts to inspect them.</desc>
+     <defs>
+      <linearGradient id="membrane-fill" x2="0" y2="1"><stop stop-color="#adf2ed"/><stop offset="1" stop-color="#4ac9c5"/></linearGradient>
+      <linearGradient id="metal-fill" x2="0" y2="1"><stop stop-color="#f3f4f8"/><stop offset="1" stop-color="#c6ccd9"/></linearGradient>
+      <linearGradient id="coil-fill"><stop stop-color="#ffba70"/><stop offset=".45" stop-color="#f17737"/><stop offset="1" stop-color="#ffc083"/></linearGradient>
+      <pattern id="hatch" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(35)"><path d="M0 0V8" stroke="#cbd2df" stroke-width="2"/></pattern>
+      <marker id="arrow-cyan" markerWidth="7" markerHeight="7" refX="5" refY="3.5" orient="auto"><path d="M0 0L6 3.5 0 7" fill="none" stroke="#169e9e" stroke-width="1.3"/></marker>
+     </defs>
+     <g id="phone-context" opacity="0"><rect x="273" y="18" width="254" height="504" rx="35" fill="#f6f8fc" stroke="#273f58" stroke-width="5"/><rect x="288" y="33" width="224" height="468" rx="23" fill="#fff" stroke="#dce3ec" stroke-width="2"/><rect x="350" y="38" width="100" height="9" rx="4.5" fill="#273f58"/><rect x="306" y="79" width="93" height="128" rx="14" fill="#e9edf5"/><path d="M420 83V295M320 228H390V353M430 319H476" fill="none" stroke="#e0e8f1" stroke-width="8" stroke-linecap="round"/><rect x="316" y="247" width="80" height="143" rx="9" fill="#f2f4f8" stroke="#e0e5ee"/><text x="400" y="448" class="diagram-small" text-anchor="middle">Speaker module → acoustic outlet</text><path d="M377 482H423" stroke="#546a80" stroke-width="4" stroke-linecap="round"/><text x="576" y="236" class="diagram-label">Sound system</text><path d="M565 246L513 280" class="leader"/><text x="568" y="266" class="diagram-small">In the parent phone</text></g>
+     <g id="assembly-model">
+      <ellipse cx="400" cy="434" rx="225" ry="18" fill="#dae3ee" opacity=".35" id="ground-shadow"/>
+      <g id="frame-part" class="diagram-part" data-inspect="frame" role="button" tabindex="0" aria-label="Inspect frame and rear enclosure">
+       <path d="M174 228H206V413H594V228H626V439H174Z" fill="url(#metal-fill)" stroke="#6e7c91" stroke-width="2.5"/>
+       <path d="M181 420H619V432H181Z" fill="url(#hatch)"/>
+       <path d="M206 402H594" stroke="#cbd3df" stroke-width="2"/>
+       <text x="400" y="459" text-anchor="middle" class="diagram-small">Rear acoustic chamber</text>
+      </g>
+      <g id="magnet-part" class="diagram-part" data-inspect="magnet" role="button" tabindex="0" aria-label="Inspect fixed magnet and soft-iron flux path">
+       <path d="M215 279H255V373H545V279H585V395H215Z" fill="url(#metal-fill)" stroke="#5e6d86" stroke-width="2.5"/>
+       <rect x="343" y="320" width="114" height="53" rx="3" fill="#6f78e6" stroke="#4852aa" stroke-width="2"/>
+       <rect x="285" y="292" width="230" height="28" rx="3" fill="#dce1ec" stroke="#5e6d86" stroke-width="2.5"/>
+       <text x="400" y="350" text-anchor="middle" class="magnet-text">N</text>
+       <path d="M284 305H252M517 305H547" stroke="#159f9b" stroke-width="2" marker-end="url(#arrow-cyan)"/>
+      </g>
+      <g id="gap-highlight" opacity="0"><rect x="257" y="286" width="26" height="41" rx="4" fill="#9cebe6" opacity=".4"/><rect x="517" y="286" width="26" height="41" rx="4" fill="#9cebe6" opacity=".4"/><path d="M270 332L237 361H140" class="leader"/><text x="138" y="358" text-anchor="end" class="diagram-label">Air gap</text><text x="138" y="378" text-anchor="end" class="diagram-small">Clearance to move</text></g>
+      <g id="moving-system">
+       <g id="coil-part" class="diagram-part" data-inspect="coil" role="button" tabindex="0" aria-label="Inspect insulated copper voice coil">
+        <path d="M268 264V318M532 264V318" stroke="#683519" stroke-width="15"/>
+        <path d="M268 269H276M264 277H276M264 285H276M264 293H276M264 301H276M264 309H276M264 317H276M524 269H536M524 277H536M524 285H536M524 293H536M524 301H536M524 309H536M524 317H536" stroke="url(#coil-fill)" stroke-width="5.5" stroke-linecap="round"/>
+        <path d="M264 269L230 251M536 269L573 254" fill="none" stroke="#e78346" stroke-width="3"/>
+       </g>
+       <g id="membrane-part" class="diagram-part" data-inspect="membrane" role="button" tabindex="0" aria-label="Inspect diaphragm and compliant surround">
+        <path d="M195 242C211 221 220 221 237 242S262 252 278 236L300 224H500L522 236C537 252 546 261 563 242S589 221 605 242" fill="none" stroke="#1ba8a4" stroke-width="6" stroke-linecap="round"/>
+        <path d="M279 236L300 224H500L521 236L513 245H287Z" fill="url(#membrane-fill)" stroke="#1ba8a4" stroke-width="2"/>
+        <path d="M270 243V268M530 243V268" stroke="#1ba8a4" stroke-width="4"/>
+        <text x="400" y="206" text-anchor="middle" class="diagram-label" id="moving-label">Diaphragm + surround</text>
+       </g>
+      </g>
+      <g id="materials-part" class="diagram-part" opacity="0" data-inspect="materials" role="button" tabindex="0" aria-label="Inspect adhesive, leads, and terminals"><rect x="190" y="241" width="22" height="5" rx="2" fill="#e4b755"/><rect x="588" y="241" width="22" height="5" rx="2" fill="#e4b755"/><path d="M229 251L217 260V356H185M573 254L603 264V356H627" fill="none" stroke="#df8b3d" stroke-width="3"/><rect x="166" y="347" width="20" height="17" rx="3" fill="#dfb967"/><rect x="626" y="347" width="20" height="17" rx="3" fill="#dfb967"/></g>
+      <g id="fixtures-part" opacity="0" class="diagram-part" data-inspect="fixture" role="button" tabindex="0" aria-label="Inspect alignment fixture"><path d="M252 255V340M284 255V340M516 255V340M548 255V340" stroke="#9672ce" stroke-width="3" stroke-dasharray="5 5"/><path d="M250 342H287M514 342H551" stroke="#9672ce" stroke-width="5" stroke-linecap="round"/><path d="M620 181L560 258" class="leader"/><text x="623" y="173" class="diagram-label">Alignment</text><text x="623" y="193" class="diagram-small">Temporary tool</text></g>
+      <g id="signal-part" opacity="0"><path d="M164 355H90V300" fill="none" stroke="#d88647" stroke-width="2.5"/><rect x="37" y="230" width="106" height="70" rx="13" fill="#fff" stroke="#8798af" stroke-width="2"/><path d="M52 265L60 265 66 244 76 282 87 244 98 282 109 265H126" fill="none" stroke="#8a68ca" stroke-width="2.5"/><text x="89" y="320" text-anchor="middle" class="diagram-small">Audio current</text><path d="M630 356H677" stroke="#d88647" stroke-width="2.5"/><path d="M661 206Q689 246 661 286M682 187Q724 246 682 305M704 169Q759 246 704 323" fill="none" stroke="#1ba8a4" stroke-width="3" stroke-linecap="round" id="sound-waves"/><text x="715" y="355" text-anchor="middle" class="diagram-small">Air moves</text></g>
+      <g id="magnet-label"><path d="M463 347L558 475H587" class="leader"/><text x="590" y="472" class="diagram-label">Fixed magnet</text><text x="590" y="492" class="diagram-small">+ soft-iron flux path</text></g>
+      <g id="coil-label"><path d="M267 301L166 177H178" class="leader"/><text x="178" y="173" text-anchor="end" class="diagram-label">Voice coil</text><text x="178" y="193" text-anchor="end" class="diagram-small">Insulated copper</text></g>
+     </g>
+    </svg>
+    </div>
+    <div class="stage-tools"><span class="view-label">SECTION VIEW · CONCEPTUAL, NOT TO SCALE</span><button id="motion-toggle" aria-pressed="false"><span aria-hidden="true">▶</span> Try the motion</button></div>
+    <div class="stage-bottom"><p id="stage-note">Tap any colored part to explore its role.</p><span id="assembly-percent">0%</span></div><div class="progress-track"><div id="assembly-progress"></div></div>
+   </section>
+   <nav class="step-rail" aria-label="Assembly steps"><a href="#step-1" class="active"><span>01</span> Magnet</a><a href="#step-2"><span>02</span> Moving parts</a><a href="#step-3"><span>03</span> Alignment</a><a href="#step-4"><span>04</span> Test</a></nav>
+  </div>
+  <div class="story">
+   <section class="story-step" id="step-1" data-step="0"><div class="step-kicker"><span class="number">01</span><span>ASSEMBLY STEP</span></div><h2>Build the fixed<br>magnetic system.</h2><p class="step-lead">Make a narrow, concentrated magnetic field where the coil will sit.</p><p>Seat the <button class="inline-chip part violet" data-inspect="magnet"><span>PART</span> magnet + iron ↗</button> inside the <button class="inline-chip part slate" data-inspect="frame"><span>PART</span> frame + enclosure ↗</button>. The soft iron guides magnetic flux around the permanent magnet and across the air gap.</p><div class="insight"><span>THE KEY IDEA</span><p>These parts stay still. The space between them is where motion becomes possible.</p></div><details><summary>What has to exist first? <span>+</span></summary><p>A permanent magnet, shaped soft-iron flux pieces, and a frame with a rear acoustic enclosure. Their manufacturing paths are dependencies of this speaker; those paths await the next preview.</p></details></section>
+   <section class="story-step" id="step-2" data-step="1"><div class="step-kicker"><span class="number">02</span><span>ASSEMBLY STEP</span></div><h2>Join the coil<br>and membrane.</h2><p class="step-lead">Two pieces become one moving assembly.</p><p>A <button class="inline-chip tool" data-inspect="fixture"><span>TOOL</span> winding + alignment fixture ↗</button> forms and holds the <button class="inline-chip part orange" data-inspect="coil"><span>PART</span> insulated copper coil ↗</button>. Bond it to the <button class="inline-chip part cyan" data-inspect="membrane"><span>PART</span> diaphragm + surround ↗</button> with <button class="inline-chip material" data-inspect="materials"><span>MATERIALS</span> assembly materials ↗</button>.</p><div class="insight cyan-insight"><span>THE KEY IDEA</span><p>The coil receives the force. The diaphragm moves the air. They must travel together.</p></div><details><summary>Why insulated copper? <span>+</span></summary><p>Copper carries current. Insulation separates neighboring turns so the wire remains one intended electrical path. The compliant surround supports the diaphragm while allowing movement.</p></details></section>
+   <section class="story-step" id="step-3" data-step="2"><div class="step-kicker"><span class="number">03</span><span>ASSEMBLY STEP</span></div><h2>Center it.<br>Then seal it.</h2><p class="step-lead">Put the moving coil in the magnetic gap, with clearance on both sides.</p><p>The <button class="inline-chip tool" data-inspect="fixture"><span>TOOL</span> alignment fixture ↗</button> centers the coil while the <button class="inline-chip material" data-inspect="materials"><span>MATERIALS</span> adhesive ↗</button> bonds the surround to the frame. Remove the temporary fixture when the assembly is secured.</p><div class="insight"><span>THE KEY IDEA</span><p>A centered coil can move freely. Contact with the fixed iron can cause rubbing and unwanted noise.</p></div><details><summary>What is being sealed? <span>+</span></summary><p>The diaphragm’s outer surround attaches to the frame. The rear enclosure defines the acoustic loading behind it. The coil itself is free to move in the gap; it is not glued to the magnet.</p></details></section>
+   <section class="story-step" id="step-4" data-step="3"><div class="step-kicker"><span class="number">04</span><span>ASSEMBLY STEP</span></div><h2>Connect it.<br>Hear it move.</h2><p class="step-lead">Turn a changing electrical signal into moving air.</p><p>Attach flexible leads and terminals from <button class="inline-chip material" data-inspect="materials"><span>MATERIALS</span> assembly materials ↗</button>. Use <button class="inline-chip tool" data-inspect="test"><span>TOOL</span> test equipment ↗</button> and an <button class="inline-chip energy" data-inspect="power"><span>ENERGY / SIGNAL</span> audio current source ↗</button> to check the result.</p><ul class="checks"><li><span>01</span> Meter: continuity &amp; DC resistance</li><li><span>02</span> Movement: no rubbing or buzz</li><li><span>03</span> Microphone: acoustic response</li></ul><button class="action" id="story-motion">Try the moving assembly <span aria-hidden="true">↗</span></button><details><summary>How does the force change? <span>+</span></summary><p>Changing current in the voice coil changes the electrodynamic force. The coil and diaphragm move together; the permanent magnet stays fixed. This visual slows and exaggerates the motion. Real speakers also have mechanical and thermal limits.</p></details></section>
+   <section class="story-step finish" id="step-5" data-step="4"><div class="step-kicker"><span class="number">✓</span><span>COMPONENT COMPLETE</span></div><h2>A small piece<br>of a bigger system.</h2><p class="step-lead">The speaker sits in the phone’s sound system, connected to an audio amplifier and an acoustic outlet.</p><p>Its enclosure and the phone’s air path influence what reaches your ears. Follow a material, energy or equipment requirement to see how different kinds of dependency work.</p><button class="action secondary" data-context="sound">See where it belongs <span aria-hidden="true">↗</span></button><div class="dependency-gallery"><a href="branch.html?page=coil&amp;from=speaker&amp;step=2&amp;back=index.html%23step-2"><small>MATERIAL → COMPONENT</small>Copper wire → voice coil ↗</a><a href="branch.html?page=power&amp;from=speaker&amp;step=4&amp;back=index.html%23step-4"><small>SHARED ENERGY SERVICE</small>Electricity generation ↗</a><a href="branch.html?page=ore&amp;from=speaker&amp;step=5&amp;back=index.html%23step-5"><small>EXTRACTION / EARLY TOOLS</small>Accessible copper ore ↗</a><a href="branch.html?page=lithography&amp;from=speaker&amp;step=5&amp;back=index.html%23step-5"><small>PHONE TOOL DEPENDENCY</small>Chip-exposure equipment ↗</a></div><a class="back-start" href="#step-1">↑ Assemble again</a></section>
+  </div>
+ </div>
+ <section class="footnote"><p><strong>A conceptual electrodynamic microspeaker.</strong> Geometry is simplified; motion and clearances are exaggerated. This is an assembly explanation, not a manufacturer’s design or a build specification.</p><p>Physics references: <a href="https://docs.klippel.de/db-lab/latest/simulation-auralisation/lsim/lsim.html" target="_blank" rel="noopener">KLIPPEL · Linear simulation ↗</a> and <a href="https://docs.klippel.de/db-lab/latest/transducer-parameter-identification/lsi3/lsi3.html" target="_blank" rel="noopener">Large signal identification ↗</a>.</p><span class="footer-brand">Piece by piece <b>01 / SPEAKER</b></span></section>
+</main>
+<dialog id="inspector" aria-labelledby="inspect-title"><div class="inspect-head"><span class="eyebrow" id="inspect-type">PART</span><button class="close" id="close-inspector" aria-label="Close inspection">×</button></div><nav class="inspect-path" aria-label="Inspection hierarchy"><span>Smartphone</span><span>›</span><span>Sound system</span><span>›</span><button id="inspect-speaker">Speaker</button><span>›</span><span id="inspect-path-current"></span></nav><p class="relationship" id="inspect-relation"></p><h2 id="inspect-title" tabindex="-1"></h2><p id="inspect-description"></p><div class="requirement"><span>IN THIS ASSEMBLY</span><p id="inspect-requirement"></p></div><div id="inspect-extra"></div><button class="action" id="branch-button">Explore how it is made <span>↗</span></button><button class="text-button" id="return-button">Return to Speaker</button></dialog>
+<div class="sr-only" aria-live="polite" id="live-status"></div>
+</body></html>

@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#070b12" />
+  <title>Zoom — inside a speaker</title>
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+</head>
+<body>
+  <main id="experience" aria-label="A conceptual smartphone making journey">
+    <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+    <canvas id="scene" aria-label="Interactive three-dimensional speaker assembly"></canvas>
+    <div class="grain"></div>
+    <header class="masthead">
+      <a class="brand" href="#" aria-label="Zoom home"><span class="brand-mark">z</span> ZOOM<span class="brand-caption">a phone, from the ground up</span></a>
+      <span class="concept-label"><i></i> A CONCEPTUAL EXPLORATION</span>
+    </header>
+    <nav id="trail" class="trail" aria-label="Making hierarchy"></nav>
+    <section class="story" aria-live="polite">
+      <div class="eyebrow"><span id="journey-label">01 / SOUND</span><span id="node-role" class="role part">Part</span></div>
+      <h1 id="journey-title">Speaker</h1>
+      <p id="journey-summary" class="journey-summary">Electricity becomes movement.<br>Movement becomes sound.</p>
+      <div class="step-story">
+        <div class="step-kicker"><span id="step-number">01</span><span id="step-kicker">BUILD THE FIELD</span></div>
+        <h2 id="step-title">A gap, full of possibility.</h2>
+        <p id="step-body"></p>
+        <button id="detail-toggle" class="quiet-button" aria-expanded="false"><span class="info-symbol">i</span> Look closer <span>↗</span></button>
+      </div>
+    </section>
+    <div id="labels" class="model-labels" aria-label="Parts and tools in this step"></div>
+    <svg id="connectors" class="connectors" aria-hidden="true"></svg>
+    <div id="model-caption" class="model-caption"><span class="live-dot"></span><span>EXPLODED ASSEMBLY</span><span class="caption-divider">/</span><span id="view-caption">magnetic system</span></div>
+    <div id="route" class="route" role="button" tabindex="0" aria-label="Go to next making step">
+      <span id="route-arrow" class="route-arrow">↗</span>
+      <div><span class="route-overline">NEXT BEARING</span><strong id="route-title">Join the moving parts</strong><span id="route-instruction">Drag right to follow the route</span></div>
+      <span class="route-track"><i id="route-progress"></i></span>
+    </div>
+    <footer class="journey-footer">
+      <div id="steps" class="step-index" aria-label="Making steps"></div>
+      <p class="gesture-hint"><span>DRAG</span> follow the making route <b>·</b><span>ZOOM</span> into a part or tool</p>
+      <button id="return-button" class="return-button">↑ Return to Phone</button>
+    </footer>
+    <aside id="detail" class="detail-panel" hidden aria-label="Extra conceptual detail"><button id="detail-close" class="detail-close" aria-label="Close detail">×</button><span class="detail-eyebrow">UNDER THE SURFACE</span><h3 id="detail-title"></h3><div id="detail-body"></div><p class="detail-footnote">Conceptual geometry. Dimensions, tolerances and material choices are not a manufacturing specification.</p></aside>
+    <div id="toast" class="toast" role="status"></div>
+    <div id="webgl-error" class="webgl-error" hidden><h2>The model needs a little more light.</h2><p>3D rendering is unavailable here. The making route and all part/tool journeys still work.</p></div>
+    <div id="depth-flash" class="depth-flash"></div>
+  </main>
+  <script type="module" src="./app.js"></script>
+</body>
+</html>

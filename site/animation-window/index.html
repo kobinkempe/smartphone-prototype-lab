@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Build a conceptual smartphone speaker in four animated steps. Explore its parts, tools and the science of sound.">
+  <meta name="theme-color" content="#fafbf8">
+  <title>Animation Window — Speaker</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="journeys.css">
+  <link rel="stylesheet" href="animation-window.css">
+</head>
+<body>
+  <header class="header">
+    <a class="brand" href="#" aria-label="Animation Window, open Phone" data-context="phone"><span class="brand-icon">◒</span> ANIMATION WINDOW</a>
+    <span class="edition">Watch a part become its inputs.</span>
+    <button class="context-button" data-context="phone">Your place in the phone <span aria-hidden="true">↗</span></button>
+  </header>
+  <nav class="tracker" aria-label="Component hierarchy">
+    <button data-context="smartphone"><span class="crumb-icon" aria-hidden="true">▯</span>Smartphone</button><span class="relation">contains <span aria-hidden="true">›</span></span>
+    <button data-context="sound">Sound system</button><span class="relation">contains <span aria-hidden="true">›</span></span><span class="current" aria-current="page">Speaker</span>
+    <span class="tracker-tag">COMPONENT 01</span>
+  </nav>
+  <main>
+    <div class="intro"><div><p class="eyebrow">EXPLORE · ASSEMBLE · UNDERSTAND</p><h1>Small part. <em>Big sound.</em></h1></div><p class="intro-note">A speaker turns an electrical signal into moving air.<br>Let’s put the idea together.</p></div>
+    <div class="journey-context" id="journey-context" hidden><button id="journey-back">← Back to Speaker</button><span id="journey-role">PART · NAVIGATION SAMPLE</span><span class="sample-note">Illustrative stand-in journey</span></div>
+    <section class="workbench" aria-label="Interactive speaker assembly">
+      <div class="lesson">
+        <div class="step-kicker"><span id="step-num">01</span><span id="step-category">THE FIXED SYSTEM</span></div>
+        <div class="step-copy" aria-live="polite" aria-atomic="true"><h2 id="step-title"></h2><p class="lede" id="step-lede"></p><div class="recipe" id="step-recipe"></div></div>
+        <details class="why" id="why"><summary>Why this works <span aria-hidden="true">+</span></summary><p id="step-science"></p></details>
+        <div class="check"><span class="check-icon" aria-hidden="true">✓</span><div><p class="small-label">WHAT YOU’RE BUILDING</p><p id="step-result"></p></div></div>
+        <p class="concept-note">A conceptual assembly, with movement enlarged so you can see it.</p>
+      </div>
+      <div class="visual-column">
+        <div class="stage-toolbar"><div class="view-switch" role="group" aria-label="Diagram view"><button id="exploded-btn" class="active" aria-pressed="true">Exploded view</button><button id="section-btn" aria-pressed="false">Inside the gap</button></div><button id="motion-btn" class="motion-btn" aria-pressed="true" aria-label="Pause diagram motion"><span aria-hidden="true">Ⅱ</span> Pause</button></div>
+        <div class="path-cues" id="path-cues"><span>Try this path</span><button class="demo-path" data-inspect="coil">Copper voice coil ↗</button><button class="demo-path tool" data-inspect="fixtures">Winding fixture <small>TOOL</small> ↗</button></div>
+        <div class="window-stage"><div class="stage" id="stage" data-step="0" data-view="exploded">
+          <div class="stage-heading"><span id="diagram-caption">The parts, before they become a speaker.</span><span class="scale-label">NOT TO SCALE</span></div>
+          <svg id="speaker-svg" viewBox="0 0 760 600" role="group" aria-labelledby="diagram-title" aria-describedby="diagram-desc">
+            <title id="diagram-title">Exploded conceptual smartphone speaker</title><desc id="diagram-desc">Four clickable layers: diaphragm and surround, copper voice coil, fixed magnetic system, and frame with rear chamber. Prev and Next animate their assembly.</desc>
+            <defs>
+              <linearGradient id="metal" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f7fafb"/><stop offset=".38" stop-color="#c9d4db"/><stop offset=".6" stop-color="#f4f7f8"/><stop offset="1" stop-color="#8eabb8"/></linearGradient>
+              <linearGradient id="metal-side" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#a8bfcb"/><stop offset="1" stop-color="#6d8797"/></linearGradient>
+              <linearGradient id="film" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#d7fffa"/><stop offset=".48" stop-color="#a2e5dd"/><stop offset="1" stop-color="#47bcb9"/></linearGradient>
+              <linearGradient id="copper" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#ffc899"/><stop offset=".35" stop-color="#dc7640"/><stop offset=".68" stop-color="#ffbe82"/><stop offset="1" stop-color="#b85324"/></linearGradient>
+              <linearGradient id="magnet" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#a0afe9"/><stop offset="1" stop-color="#536db4"/></linearGradient>
+              <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="9"/></filter>
+              <marker id="arrow" markerWidth="7" markerHeight="7" refX="5" refY="3.5" orient="auto"><path d="M0,0 L6,3.5 L0,7" fill="none" stroke="#24aaa7" stroke-width="1.5"/></marker>
+              <marker id="navy-arrow" markerWidth="7" markerHeight="7" refX="5" refY="3.5" orient="auto"><path d="M0,0 L6,3.5 L0,7" fill="none" stroke="#546d81" stroke-width="1.5"/></marker>
+            </defs>
+            <g id="exploded-diagram">
+              <ellipse class="ground-shadow" cx="373" cy="519" rx="205" ry="24" fill="#718b92" opacity=".10" filter="url(#shadow)"/>
+              <g class="guide-lines" fill="none" stroke="#bcced4" stroke-width="1.4" stroke-dasharray="4 8"><path d="M222 150v305 M522 113v305"/><path id="assembly-arrow" d="M376 222v93" stroke="#22a6a3" stroke-width="2.2" marker-end="url(#arrow)"/></g>
+              <g id="layer-frame" class="part layer" data-part="frame" tabindex="0" role="button" aria-label="Inspect frame and rear chamber">
+                <path d="M161 417 L499 361 Q520 359 530 375 L591 458 L590 479 Q590 496 569 500 L233 555 Q215 558 202 543 L149 469 L148 449 Q148 426 161 417Z" fill="url(#metal-side)" stroke="#7b97a6" stroke-width="2"/>
+                <path d="M165 415 L500 359 Q517 357 530 372 L587 451 Q598 469 577 476 L241 532 Q219 536 206 520 L152 446 Q140 424 165 415Z" fill="url(#metal)" stroke="#7b97a6" stroke-width="2"/>
+                <path d="M194 434 L493 385 L546 454 L248 503Z" fill="#e3edef" stroke="#819fac" stroke-width="2"/>
+                <path d="M211 450 L490 406 L519 447 L253 487Z" fill="#aebfc7" opacity=".46"/>
+                <path d="M219 504l16 23 M544 475l15 19" stroke="#6d8797" stroke-width="4"/>
+                <g fill="#718e9e" stroke="#e8f0f3" stroke-width="2"><ellipse cx="173" cy="432" rx="8" ry="4"/><ellipse cx="509" cy="378" rx="8" ry="4"/><ellipse cx="574" cy="459" rx="8" ry="4"/><ellipse cx="225" cy="521" rx="8" ry="4"/></g>
+                <g class="part-label"><path d="M559 486h45"/><circle cx="624" cy="486" r="19"/><text x="624" y="492">4</text><text class="label-name" x="651" y="491">Frame</text></g>
+              </g>
+              <g id="layer-magnet" class="part layer" data-part="magnet" tabindex="0" role="button" aria-label="Inspect fixed magnet and soft-iron flux path">
+                <path d="M184 329 L488 279 Q504 277 515 291 L560 352 L560 370 Q560 384 544 387 L243 437 Q226 440 216 426 L172 367 L170 349 Q169 333 184 329Z" fill="url(#metal-side)" stroke="#7b97a6" stroke-width="2"/>
+                <path d="M184 329 L488 279 Q504 277 515 291 L559 351 Q566 366 547 371 L243 422 Q227 424 216 410 L173 351 Q163 333 184 329Z" fill="url(#metal)" stroke="#7b97a6" stroke-width="2"/>
+                <path d="M212 339 L475 295 L523 355 L261 399Z" fill="#5f7988" stroke="#344f64"/>
+                <path d="M229 323 L465 284 L505 337 L505 358 L268 398 L229 345Z" fill="url(#magnet)" stroke="#536db4" stroke-width="2"/>
+                <path d="M260 316 L454 284 L487 330 L487 350 L294 382 L260 337Z" fill="url(#metal-side)" stroke="#7794a3" stroke-width="2"/>
+                <path d="M260 316 L454 284 L488 330 L294 362Z" fill="url(#metal)" stroke="#7794a3" stroke-width="2"/>
+                <path d="M207 340 L227 337 M493 338 L518 334" stroke="#eefbfa" stroke-width="7"/><path d="M207 340 L227 337 M493 338 L518 334" stroke="#24aaa7" stroke-width="1.7" marker-end="url(#arrow)"/>
+                <g class="part-label"><path d="M175 363h-45"/><circle cx="110" cy="363" r="19"/><text x="110" y="369">3</text><text class="label-name" x="35" y="405">Magnetic system</text></g>
+              </g>
+              <g id="layer-coil" class="part layer" data-part="coil" tabindex="0" role="button" aria-label="Inspect insulated copper voice coil">
+                <path d="M240 226 Q223 207 250 201 L443 169 Q460 166 472 181 L499 217 L499 242 Q498 254 480 258 L288 290 Q269 293 258 279 L235 250Z" fill="url(#copper)" stroke="#ba612c" stroke-width="2"/>
+                <path d="M256 217 L445 186 L479 229 L290 260Z" fill="#fcfdfb" stroke="#ba612c" stroke-width="2"/>
+                <g fill="none" stroke="#ffc99a" stroke-width="2"><path d="M240 232 Q232 222 247 219 L447 186 Q459 184 467 193 L493 229 Q499 238 484 241 L287 274 Q272 276 264 266Z"/><path d="M240 239 Q232 229 247 226 L447 193 Q459 191 467 200 L493 236 Q499 245 484 248 L287 281 Q272 283 264 273Z"/><path d="M240 225 Q232 215 247 212 L447 179 Q459 177 467 186 L493 222 Q499 231 484 234 L287 267 Q272 269 264 259Z"/></g>
+                <path d="M237 245l-29 5-14 14-22 4 M498 240l32 13 15-2" fill="none" stroke="#c86b35" stroke-width="4" stroke-linecap="round"/>
+                <g class="part-label"><path d="M503 215h63"/><circle cx="586" cy="215" r="19"/><text x="586" y="221">2</text><text class="label-name" x="613" y="220">Voice coil</text></g>
+              </g>
+              <g id="layer-fixture" class="part fixture-overlay" data-part="fixtures" tabindex="0" role="button" aria-label="Try this path: Winding fixture tool">
+                <path d="M259 219 L443 189 L471 225 L287 256Z" fill="#b8e2d8" fill-opacity=".65" stroke="#4ca493" stroke-width="2"/>
+                <path d="M305 244v31h118v-50" fill="none" stroke="#83a2ad" stroke-width="6"/>
+                <g class="fixture-target"><path d="M475 245h112" stroke="#a995bb" stroke-width="1.5"/><circle cx="614" cy="245" r="24" fill="#f5effc" stroke="#a995bb" stroke-width="2"/><text x="614" y="252" text-anchor="middle" fill="#6d548b" font-size="19">↗</text><text x="578" y="287" fill="#77648f" font-size="15">TOOL · Try this path</text></g>
+              </g>
+              <g id="layer-film" class="part layer" data-part="film" tabindex="0" role="button" aria-label="Inspect diaphragm and compliant surround">
+                <path d="M191 95 L479 47 Q500 44 513 61 L555 115 Q568 134 542 141 L251 190 Q230 194 215 176 L175 123 Q162 103 191 95Z" fill="url(#film)" stroke="#329d9e" stroke-width="2"/>
+                <path d="M194 106 L478 59 Q493 57 503 70 L542 122 Q548 132 536 134 L249 181 Q235 184 226 171 L187 119 Q182 109 194 106Z" fill="none" stroke="#e1fffa" stroke-width="2"/>
+                <path d="M228 117 L466 78 Q478 75 489 88 L514 121 Q520 130 505 133 L269 172 Q255 175 247 165 L221 131 Q214 120 228 117Z" fill="#effffc" fill-opacity=".36" stroke="#2da4a5" stroke-width="2"/>
+                <path d="M247 125 L458 90 Q470 88 476 96 L493 119 Q499 127 488 129 L277 164 Q265 166 258 157 L242 137 Q237 129 247 125Z" fill="url(#film)" stroke="#9bded9" stroke-width="2"/>
+                <g fill="none" stroke="#dcfffa" stroke-width="2" opacity=".8"><path d="M199 115l20 12 M212 132l24 12 M225 148l25 10 M239 164l21 3 M486 72l-9 16 M501 89l-14 18 M515 106l-19 11 M528 122l-22 5"/><path d="M267 98l8 9 M312 90l7 8 M360 82l7 9 M405 75l8 9 M301 174l-7-7 M347 166l-7-7 M395 158l-7-7 M441 150l-7-7"/></g>
+                <g class="part-label"><path d="M184 111h-35"/><circle cx="128" cy="111" r="19"/><text x="128" y="117">1</text><text class="label-name" x="28" y="74">Diaphragm</text></g>
+              </g>
+              <g id="sound-waves" fill="none" stroke="#24aaa7" stroke-width="3" stroke-linecap="round"><path d="M565 265q22 26 0 53"/><path d="M588 251q36 39 0 79"/><path d="M613 237q48 51 0 104"/></g>
+            </g>
+            <g id="section-diagram" aria-hidden="true">
+              <g class="section-base" data-part="frame" tabindex="0" role="button" aria-label="Inspect frame and rear chamber"><path d="M170 265h34v190h352V265h34v222H170Z" fill="url(#metal)" stroke="#839eac" stroke-width="2"/><path d="M205 438h350" stroke="#a1b5c0" stroke-width="2"/><text x="380" y="467" text-anchor="middle" class="svg-note">REAR AIR CHAMBER</text></g>
+              <g class="section-base" data-part="magnet" tabindex="0" role="button" aria-label="Inspect fixed magnetic system"><path d="M239 320h44v96h194v-96h44v117H239Z" fill="url(#metal-side)" stroke="#587686" stroke-width="2"/><rect x="334" y="357" width="92" height="59" rx="2" fill="url(#magnet)" stroke="#536db4" stroke-width="2"/><rect x="315" y="334" width="130" height="24" rx="2" fill="url(#metal)" stroke="#7393a3" stroke-width="2"/><path class="field-arrow" d="M284 344h28 M447 344h27" fill="none" stroke="#24aaa7" stroke-width="2" marker-end="url(#arrow)"/></g>
+              <g id="section-moving">
+                <g data-part="coil" tabindex="0" role="button" aria-label="Inspect copper coil moving in the air gap"><path d="M294 282v98 M467 282v98" stroke="#c57942" stroke-width="4"/><g class="coil-turns" fill="url(#copper)" stroke="#b36332" stroke-width="1.2"><path d="M288 315h12v7h-12Z M288 326h12v7h-12Z M288 337h12v7h-12Z M288 348h12v7h-12Z M288 359h12v7h-12Z M461 315h12v7h-12Z M461 326h12v7h-12Z M461 337h12v7h-12Z M461 348h12v7h-12Z M461 359h12v7h-12Z"/></g></g>
+                <g data-part="film" tabindex="0" role="button" aria-label="Inspect diaphragm and flexible surround"><path d="M187 266q12-17 24 0t24 0q14-20 30-1l28 16h174l28-16q16-19 30 1t24 0q12-17 24 0" fill="none" stroke="#24aaa7" stroke-width="5" stroke-linecap="round"/><path d="M293 281h174" stroke="#8fd7d0" stroke-width="9"/></g>
+              </g>
+              <g class="section-annotations" fill="none" stroke="#546d81" stroke-width="1.5"><path d="M381 194v65" marker-end="url(#navy-arrow)"/><path d="M606 342H488" marker-end="url(#navy-arrow)"/><path d="M380 520v-79" marker-end="url(#navy-arrow)"/></g>
+              <text x="380" y="142" text-anchor="middle" class="section-label">Diaphragm + coil move together</text><text x="701" y="310" text-anchor="end" class="section-label gap-label">Magnetic air gap</text><text x="701" y="330" text-anchor="end" class="svg-note gap-label">Coil moves without touching</text><text x="380" y="545" text-anchor="middle" class="section-label">Magnet + iron stay still</text>
+              <g id="section-wave" fill="none" stroke="#24aaa7" stroke-width="2.5"><path d="M303 228q77-18 154 0 M283 205q97-25 194 0 M264 182q116-31 232 0"/></g>
+            </g>
+          </svg>
+          <svg id="child-svg" viewBox="0 0 760 600" role="group" aria-labelledby="child-title" aria-describedby="child-desc" hidden><title id="child-title">Child journey diagram</title><desc id="child-desc">Illustrative navigation sample with three conceptual steps.</desc><defs><linearGradient id="child-copper" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#ffc899"/><stop offset=".4" stop-color="#dc7640"/><stop offset=".8" stop-color="#ffbe82"/><stop offset="1" stop-color="#b85324"/></linearGradient><linearGradient id="child-metal" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f6faf8"/><stop offset=".5" stop-color="#d0dfd8"/><stop offset="1" stop-color="#8dabaa"/></linearGradient><linearGradient id="child-magnet" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#99ade0"/><stop offset="1" stop-color="#5b76af"/></linearGradient></defs><g id="child-art"></g></svg>
+          <svg id="tool-action" viewBox="0 0 760 600" role="group" aria-label="Tools participating in the current making step"><g id="tool-action-art"></g></svg>
+          <div class="stage-foot"><span><i class="status-dot"></i><span id="stage-status">Fixed parts, ready to assemble</span></span><span class="tap-hint">Tap a numbered part to explore <span aria-hidden="true">↗</span></span></div>
+        </div><aside class="tool-rack" aria-label="Tools at the workbench"><p>Tools <span>Open how they’re made</span></p><div id="rack-items"></div></aside></div>
+        <div class="legend" aria-label="Part color legend"><span><i class="teal"></i>Moving membrane</span><span><i class="copper"></i>Copper coil</span><span><i class="blue"></i>Fixed magnet</span></div>
+      </div>
+    </section>
+    <nav class="assembly-nav" aria-label="Assembly steps">
+      <button id="bottom-back" class="parent-return" hidden>↩ Parent</button>
+      <button id="prev" class="arrow-control"><span aria-hidden="true">←</span> Prev</button>
+      <div class="steps" role="group" aria-label="Jump to an assembly step"><button data-step="0" aria-current="step"><span>01</span><span class="step-nav-label">Magnetic system</span></button><span class="step-line"></span><button data-step="1"><span>02</span><span class="step-nav-label">Moving assembly</span></button><span class="step-line"></span><button data-step="2"><span>03</span><span class="step-nav-label">Center & seal</span></button><span class="step-line"></span><button data-step="3"><span>04</span><span class="step-nav-label">Connect & test</span></button></div>
+      <button id="next" class="arrow-control primary">Next <span aria-hidden="true">→</span></button>
+    </nav>
+    <div class="below-note"><p><span class="tiny-tag">THE IDEA</span> Current → magnetic force → diaphragm motion → sound.</p><button id="all-parts">See the speaker’s 13 building blocks <span aria-hidden="true">↗</span></button></div>
+    <aside id="inline-inspection" class="inline-inspection" tabindex="-1" aria-live="polite" hidden></aside>
+    <footer>FIRST COMPONENT PREVIEW <span>Conceptual electrodynamic micro-speaker · <button id="sources-btn">Source notes</button></span></footer>
+  </main>
+  <dialog id="inspector" aria-labelledby="inspector-title">
+    <form method="dialog"><button class="close" aria-label="Close inspection">×</button></form>
+    <div class="inspector-content" id="inspector-content"></div>
+  </dialog>
+  <script src="window.js"></script>
+</body>
+</html>
