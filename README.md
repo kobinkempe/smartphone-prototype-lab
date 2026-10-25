@@ -1,5 +1,13 @@
 # Smartphone Prototype Lab
 
+**A lab for using AI to prototype a complex learning experience, before choosing how to visualize and share a large research project.**
+
+The research began with an educational question: what would it take to build a smartphone without the tools, factories and industrial infrastructure we take for granted? Following a phone back through its parts, materials and tools produces a huge web of information. I wanted to turn that web into something people could enjoy exploring.
+
+This repository compares six working UX approaches to that problem. I used separate AI agents to turn competing ideas into interactive prototypes, then tried and refined them to decide which interactions make the research understandable: illustrated articles, animation, scrolling, 3D zoom, a spatial canvas or a collapsible stack.
+
+The [Smartphone Research Map](https://github.com/kobinkempe/smartphone-research-map) organizes the research and its dependencies. This lab explores how to present that kind of information. The prototypes use a limited, separately authored speaker-and-tools journey; they do not yet load the full research registry automatically.
+
 ## Public demo
 
 [Open the live demo](https://kobin-ai-portfolio.kobinkempe.chatgpt.site/smartphone-prototype-lab/) · [Read the case study](https://kobin-ai-portfolio.kobinkempe.chatgpt.site/case-studies/smartphone-prototype-lab/)
@@ -34,7 +42,9 @@ Open http://127.0.0.1:8000. Try Phone → Speaker → Coil → Wire, follow a to
 
 ## AI and research workflow
 
-The original project used separate AI prototyping agents working from a shared brief, with first-component review before broader expansion. Scientific research, illustration generation, content review and interaction revisions supported the prototypes. [The companion research map](https://github.com/kobinkempe/smartphone-research-map) implements the structured dependency registry and validation workflow. These UI prototypes are authored separately; they do not yet consume that registry automatically.
+I set the educational goal, interaction rules, visual direction and review criteria, then gave separate AI agents different prototype directions. Agents helped research the example content, create conceptual illustrations, implement interactions and respond to critique. I reviewed a first component before expanding a direction.
+
+The difficult UX question is how to enter a part, follow its making steps, detour into a tool’s own making process and return without losing your place. Working versions let me compare that experience directly: does the motion explain a relationship, is the hierarchy clear, and does a return restore the exact step? AI made it practical to explore several approaches before committing to a full learning site. These browser demos run without a live model.
 
 See [docs/WORKFLOW.md](docs/WORKFLOW.md) for the complete connection between research, graph validation, map views and experience prototypes. Figure provenance is in [docs/ILLUSTRATION.md](docs/ILLUSTRATION.md). [Third-party notices](THIRD_PARTY.md).
 
