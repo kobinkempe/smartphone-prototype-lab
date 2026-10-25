@@ -1,6 +1,6 @@
 # Animation Window
 
-Open `/animation-window/` through the shared static server. Root owns registration and publishing.
+From the repository root, serve `site/` with a static HTTP server and open `/animation-window/`. See the main README for the server command.
 
 Clicking the Speaker's coil first enlarges the selected finished part while the other layers recede. The child holds a finished coil, brings its temporary form back underneath it, then visibly peels the winding into one continuous insulated wire. The reverse-entry sequence takes about 3.5 seconds. Generic Prev / Next / jumps subsequently follow the active item's making steps; the same sampled continuous path winds and unwinds on the Coil page.
 
@@ -12,6 +12,6 @@ Phone is a regular three-step stand-in. Every non-root item has an immediate par
 
 Active code is window.js plus animation-window.css, with the retained technical Speaker SVG and base styling. Legacy app.js / journeys.js are not loaded.
 
-Checks: active script syntax passed. A bounded core-flow execution checked finished-coil reverse entry ending at wire, nested Wire and Winding fixture returns, exact Speaker state restoration and regular Phone return/re-entry. This agent has no available browser surface; the root agent performs the single desktop/phone visual acceptance pass before publishing.
+Recorded checks covered active script syntax, finished-coil reverse entry ending at wire, nested Wire and Winding fixture returns, exact Speaker state restoration and regular Phone return/re-entry. The repository's static audit checks local asset references and JavaScript syntax; it does not replace interaction checks in a browser.
 
 Limits: unwinding is an illustrative continuous-path transformation, not a winding-machine simulation. Stand-ins and TBD geometry communicate dependencies rather than a validated manufacturing specification. Power-source making explicitly requires supplied mechanical work; magnets alone are not treated as a continuous power supply. Source notes link the KLIPPEL primary documentation used for the conceptual Speaker physics.

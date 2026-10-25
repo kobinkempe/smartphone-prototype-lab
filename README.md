@@ -50,6 +50,12 @@ See [docs/WORKFLOW.md](docs/WORKFLOW.md) for the complete connection between res
 
 ## Scope and validation
 
-The included static audit checks 93 files and 20 application scripts with no missing local references or JavaScript syntax errors. Desktop screenshots, the Zoom entry view and a nested learning journey are inspected in Chrome. This is a research prototype collection: conceptual geometry is enlarged for explanation, some child pages are explicitly marked stand-ins, and it is not a complete manufacturing encyclopedia. No fabrication success or learning-outcome metric is claimed.
+The included static audit checks local asset references, viewport metadata and JavaScript syntax. Recorded browser review covered desktop screenshots, the Zoom entry view and a nested learning journey. This is a research prototype collection: conceptual geometry is enlarged for explanation, some child pages are explicitly marked stand-ins, and it is not a complete manufacturing encyclopedia. No fabrication success or learning-outcome metric is claimed.
 
-Built with AI assistance; the demos do not call a model at runtime. [Publication review](PUBLICATION_REVIEW.md).
+Run the static asset and JavaScript syntax audit with Node.js:
+
+```sh
+node validate-static.cjs
+```
+
+Built with AI assistance; the demos do not call a model at runtime. Third-party JavaScript and font license notices remain alongside their assets. Scientific source links explain the conceptual examples; they are not a validation of a complete manufacturing process.

@@ -2,7 +2,7 @@
 
 ## Review 2 cutaway
 
-Built-in ImageGen created and the owner inspected `dist/encyclopedia/realistic-cutaway.png`. Its absolute saved path is `source-project/smartphone-prototype-lab/dist/encyclopedia/realistic-cutaway.png`.
+Built-in ImageGen created and the owner inspected `site/encyclopedia/realistic-cutaway.png`.
 
 Final prompt:
 
