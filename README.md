@@ -10,7 +10,7 @@ The [Smartphone Research Map](https://github.com/kobinkempe/smartphone-research-
 
 ## Public demo
 
-[Open the live demo](https://kobin-ai-portfolio.kobinkempe.chatgpt.site/smartphone-prototype-lab/) · [Read the case study](https://kobin-ai-portfolio.kobinkempe.chatgpt.site/case-studies/smartphone-prototype-lab/)
+[Open the live demo](https://kobinkempe.pages.dev/smartphone-prototype-lab/) · [Read the case study](https://kobinkempe.pages.dev/case-studies/smartphone-prototype-lab/)
 
 Six interactive ways to explore how a smartphone's parts and tools are made, using the speaker and its dependencies as a shared learning journey.
 

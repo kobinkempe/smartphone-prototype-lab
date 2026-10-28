@@ -27,8 +27,8 @@ Choose ore chemistry before choosing the process. Copper Development Association
 Proposed first UI stress test: electrorefining as one bounded process, with impure copper anode, cathode, electrolyte, DC supply and cell as distinct roles; four headlines: set up the cell, drive controlled current, recover copper, check the product. Make upstream sulfide processing a separate group, and downstream casting/drawing/annealing/insulation a wire-making group. Electricity powers the refining cell, while the cell is a tool and copper is the transformed material. Avoid treating smelting, electrorefining and wire drawing as a single small component.
 
 Sources:
-- https://www.copper.org/education/copper-production/?level=1
-- https://archive.copper.org/education/copper-production/6.php
+- https://web.archive.org/web/20251127144626/https://copper.org/education/copper-production/ (archived copy)
+- https://web.archive.org/web/20251029062050/https://copper.org/education/copper-production/6.php (archived copy)
 - https://semspub.epa.gov/work/HQ/189955.pdf
 - https://www.epa.gov/sites/default/files/2020-11/documents/c12s03.pdf
 
