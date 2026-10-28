@@ -10,7 +10,7 @@ The [Smartphone Research Map](https://github.com/kobinkempe/smartphone-research-
 
 ## Public demo
 
-[Open the live demo](https://kobinkempe.pages.dev/smartphone-prototype-lab/) · [Read the case study](https://kobinkempe.pages.dev/case-studies/smartphone-prototype-lab/)
+[Open the live demo](https://kobinkempe.pages.dev/smartphone-prototype-lab/) · [See project details](https://kobinkempe.pages.dev/projects/smartphone-prototype-lab/)
 
 Six interactive ways to explore how a smartphone's parts and tools are made, using the speaker and its dependencies as a shared learning journey.
 
@@ -38,7 +38,7 @@ Python 3.10+ or another static HTTP server; no build or model credentials requir
 python -m http.server 8000 --bind 127.0.0.1 --directory site
 ```
 
-Open http://127.0.0.1:8000. Try Phone → Speaker → Coil → Wire, follow a tool-making detour, and return to the parent step. The older `prev-next` and `scroll-retired` folders preserve additional experiments; the six cards on the landing page are the current comparison set.
+Open http://127.0.0.1:8000 and start with the Encyclopedia: read the speaker article, open the copper voice coil, take a tool-making detour and return to the speaker. The older `prev-next` and `scroll-retired` folders preserve additional experiments; the six cards on the landing page are the current comparison set.
 
 ## AI and research workflow
 
